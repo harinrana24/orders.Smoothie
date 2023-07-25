@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles.css">
+    <title>Smoothie</title>
+</head>
+<body>
+   
+<div class="main">
+
+    <h1>It's Smoothie Time</h1>
+
+<form action="">
+
+    <h2>Make Your Own Smoothie</h2>
+<div class="labs milk">
+  
+    <label class="lab_main" for="Milk Base">Milk Base: </label>
+<input type="radio" name="milk" id="Cow Milk" value="cow milk">
+<label for="cow">Cow Milk</label>
+<input type="radio" name="milk" id="Almond Milk" value="almond milk">
+<label for="almond">Almond Milk</label>
+</div>
+
+<div class="labs flavour" >
+<label class="lab_main" for="flavour">Choose a flavour:</label>
+<select name="flavour" id="flavour">
+    <option selected="true" value="strawberry">Strawberry</option>
+    <option value="banana">Banana</option>
+    <option value="mango">Mango</option>
+    <option value="blueberry">Blueberry</option>
+</select>
+</div>
+
+<div class="labs extras" >
+<label class="lab_main" for="extras">Select extras:</label>
+        <input type="checkbox" name="extras" value="protein" id="protein">
+        <label for="protein">Protein Powder</label>
+        <input type="checkbox" name="extras" value="honey" id="honey">
+        <label for="honey">Honey</label>
+</div>
+
+<div class="labs quantity" >
+        <label class="lab_main" for="quantity">Quantity:</label>
+        <input type="number" name="quantity" id="quantity" min="1" max="10"  value="1">
+    </div>
+
+        <button onclick="chan()" type="button" id="orderButton">Order</button>
+
+</form>
+
+<div id="smtedescr"></div>
+
+</div>
+<script src="java.js"></script>
+</body>
+</html>
